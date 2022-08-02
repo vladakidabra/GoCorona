@@ -259,6 +259,9 @@ body{
 .block-text {
 
 }
+.block-text-center { 
+	text-align: center;
+}
 .block-text__title {
 	font-weight: 700;
 	font-size: 44px;
@@ -281,6 +284,10 @@ body{
 }
 .block-text__text:not(:last-child) {
 	margin: 0px 0px 24px 0px;
+}
+.block-text__text_mw { 
+	max-width: 620 px;
+	margin: 0px auto;
 }
 .block-text__button {
 }
@@ -382,6 +389,7 @@ body{
 	display: flex;
 	align-items: center;
 }
+
 .stay-safe__media {
 	flex: 0 1 50%;
 	padding: 0px 0px 0px 47px;
@@ -394,13 +402,333 @@ body{
 
 .media-stay-safe {
 	width: 378px;
-	display: inline-block;
+	padding: 56px 0px 27px 0px;
+	text-align: center;
 	position: relative;
 }
 .media-stay-safe__image {
-	text-align: center;
-	width: 373px;
-	height: 469px;
+	display: inline-block;
+	box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+	position: relative;
+}
+@media (max-width: 991.98px) {
+	.stay-safe{
+		padding: 40px 0px;
+	}
+	.stay-safe__container{
+		
+		flex-wrap: wrap;
+	}
+	.media-stay-safe{
+		width:100%;
+	}
+	.stay-safe__media{
+		padding: 0;
+		flex: 1 1 auto;
+	}
+	.stay-safe__content{
+		flex: 1 1 auto;
+		text-align: center;
+		padding: 0px 20px;
+	}
 }
 
 /* https://www.youtube.com/watch?v=sohdv21BVNI ============================ */
+
+
+/* =======EXPERTS================================ */
+
+.experts {
+	background-color: #fafbfd;
+	padding: 103px 0px 116px 0px;
+	
+}
+.experts__container {
+
+}
+.experts__statistics {
+}
+.experts__block-text{
+	max-width: 400px;
+}
+
+.experts__body { 
+	align-items:center;
+	display: flex;
+}
+.experts__content { 
+	flex: 0 1 50%;
+}
+
+.experts__video{
+	flex: 0 1 50%;
+	padding: 0px 0px 30% 0px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+	border-radius: 8px;
+}
+.experts__video iframe {   /*АДПАТИВНОЕ ВИДЕО=============*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	lef: 0;
+	object-fit: cover;
+}
+.statistics__experts {
+	max-width: 655px;
+	margin: 0px auto;
+	position: relative;
+}
+@media(max-width:767.98px) {
+	.experts__body{
+		align-items: stretch;
+		flex-direction: column;
+	}
+	.experts__video {
+		padding: 0px 0px 58% 0px;
+	}
+	.experts__content { 
+		margin: 0;
+		padding: 0px 0px 30px 0px;
+	}
+	.experts {
+		padding: 80px 0px 30px 0px;
+	}
+}
+.statistics-experts__body {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.16);
+	border-radius: 16px;
+	display: flex;
+	/* flex: 0 0 auto; */
+	align-items: center; 
+	justify-content: space-evenly;
+	text-align: center;
+	padding: 28px 0px;
+	flex: 1 1 100%;
+	margin: 0px 0px 80px 0px;
+}
+.body-statistics-experts {
+	
+}
+.body-statistics-experts__item {
+	
+}
+.body-statistics-experts__value {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 119%;
+	letter-spacing: 4px;
+	color: #EC5863;
+	margin-bottom: 5px;
+}
+.body-statistics-experts__text {
+	color: #000;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 119%;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+
+.statistics__experts__decor {
+	position: absolute;
+	background-color: #ec5863;
+	border-radius: 30px;
+}
+.statistics__experts__decor_1 {
+	width: 65px;
+	height: 65px;
+	transform: rotate(-30deg);
+	bottom: -31px;
+	left: -31px;
+	border-radius: 16px;
+}
+.statistics__experts__decor_2 {
+	width: 97px;
+	height: 97px;
+	right: 50%;
+	top: -40px;
+	transform: rotate(20deg);
+}
+.statistics__experts__decor_3 {
+	width: 127.47px;
+	height: 127.47px;
+	left: 90%;
+	top: -10px;
+	transform: rotate(-30deg);
+}
+@media(max-width: 991.98px) { 
+	.statistics-experts__body{
+		flex-wrap: wrap;
+	}
+}
+@media(max-width:767.98px) {
+	.statistics-experts__body {
+		margin: 0px 0px 58px 0px;
+	}
+	.body-statistics-experts {
+		padding: 25px;
+	}
+}
+@media(max-width:479.98px) {
+	.body-statistics-experts{
+		flex-direction: column;
+	}
+	.body-statistics-experts__item:not(:last-child) {
+		margin: 0px 0px 38px 0px;
+	}
+}
+
+/* =====Healthcare================================================= */
+
+.healthcare {
+	padding: 80px 0px 30px 0px;
+}
+.healthcare__container {
+}
+.healthcare__block-text {
+	margin: 0px 0px 45px 0px; 
+}
+
+.healthcare__items {
+	/* gap: 72px; */
+	display: flex;
+}
+.healthcare__column {
+	position: relative;
+	padding: 0px 36px;
+	flex: 0 1 33.333%;
+}
+.healthcare__item {
+}
+
+.item-healthcare {
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 36px 17px;
+}
+.item-healthcare__icon {
+	margin: 0px 0px 58px 0px;
+}
+.item-healthcare__title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 138.5%;
+	margin: 0px 0px 4px 0px;
+	color: #000000;
+}
+.item-healthcare__text {
+	line-height: 138.5%;
+}
+/* ======DECOR Псевдоэлементами=====*/
+
+.healthcare_column_1::before,
+.healthcare_column_1::after {
+	content: '';
+	position: absolute;
+	background-color: #ec5863;
+	border-radius: 16px;
+}
+.healthcare_column_1::before {
+	content: '';
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	bottom: -35px;
+	left: 15px;
+	transform: rotate(-30deg);
+}
+
+.healthcare_column_1::after {
+	content: '';
+	width: 97px;
+	height: 97px;
+	position: absolute;
+	top: 35px;
+	right: -10px;
+	border-radius: 30px;
+	transform: rotate(20deg);
+}
+
+
+.healthcare_column_2::after {
+	content: '';
+	position: absolute;
+	background-color: #ec5863;
+	width: 127px;
+	height: 127px;
+	bottom: -35px;
+	right: -35px;
+	border-radius: 30px;
+	transform: rotate(55deg);
+}
+
+.healthcare_column_3::after {
+	content: '';
+	position: absolute;
+	background-color: #ec5863;
+	width: 65px;
+	height: 65px;
+	top: -35px;
+	right: 8px;
+	border-radius: 16px;
+	transform: rotate(55deg);
+}
+
+@media (max-width: 1087px) { 
+	.healthcare__column {
+		padding: 0px  15px;
+	}
+}
+@media (max-width: 991.98px) {
+	.healthcare {
+		padding: 30px 0px 30px 0px;
+	}
+	.healthcare__items {
+		flex-direction: column;
+	}
+	.healthcare__column:not(:last-child) {
+		margin: 0px 0px 25px 0px;
+	}
+	
+}
+/* ============FOOTER====================== */
+
+.footer {
+	padding: 40px 0px;
+}
+.footer__container {
+
+}
+.footer__items {
+	display: flex;
+	column-gap: 50px;
+	row-gap: 50px;
+	justify-content: center;
+	align-items: center;
+}
+.foter__item {
+}
+@media (max-width: 500px) {
+	.footer {
+		padding: 30px 0;
+	}
+	.footer__items { 
+		flex-direction: column;
+	}
+}
